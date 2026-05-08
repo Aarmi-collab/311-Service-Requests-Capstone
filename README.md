@@ -39,26 +39,29 @@ Using descriptive analytics, statistical testing, predictive modelling, and inte
 ## Project Structure
 
 ```
-nyc-311-analytics/
-│
-├── data/
-│   ├── 311_Service_Requests.csv        # Raw dataset
-│   ├── 311_clean_base.csv              # Cleaned dataset
-│   └── 311_Service_Requests_Meta_Data.xlsx  # Metadata file
-│
-├── notebooks/
-│   ├── 01_data_cleaning.ipynb          # Data cleaning & preparation
-│   ├── 02_eda.ipynb                    # Exploratory data analysis
-│   ├── 03_feature_engineering.ipynb    # Feature engineering
-│   ├── 04_statistical_analysis.ipynb   # Hypothesis testing
-│   └── 05_predictive_modeling.ipynb    # Logistic regression, decision tree, random forest
+311-Service-Requests-Capstone/
 │
 ├── dashboard/
-│   ├── NYC311_Dashboard.pbix           # Power BI dashboard file
-│   └── NYC311_Dashboard.pdf            # PDF export of dashboard
+│   └── Capstone Project.pbix           # Interactive Power BI dashboard
 │
-├── outputs/
-│   └── figures/                        # All charts and visualisation exports
+├── data/
+│   ├── cleaned/                        # Cleaned dataset (311_clean_base.csv)
+│   ├── meta data/                      # Metadata file describing all variables
+│   └── raw/                            # Original raw dataset
+│
+├── images/
+│   ├── Deep Comparsion Analysis.png    # Dashboard screenshot
+│   ├── Geographic Analysis.png         # Dashboard screenshot
+│   ├── KPI.png                         # Dashboard screenshot
+│   ├── Operational Patterns.png        # Dashboard screenshot
+│   ├── Service Performance analysis.png
+│   └── Time trend Analysis.png         # Dashboard screenshot
+│
+├── notebooks/
+│   ├── 311_Service_Requests_Project.ipynb   # Full analysis notebook
+│   └── 311_Service_Requests_Project.html    # HTML export of notebook
+│
+├── reports/                            # Project report and presentation
 │
 ├── README.md
 ├── requirements.txt
@@ -126,14 +129,14 @@ nyc-311-analytics/
 
 The interactive dashboard contains 6 report pages:
 
-| Dashboard | Focus |
+| Dashboard | Preview |
 |---|---|
-| Overview | KPIs — 149K requests, 20% delay rate, 94.09% closure rate |
-| Service Performance | Borough, agency, complaint type, season comparison |
-| Time Trend Analysis | Monthly and seasonal patterns |
-| Geographic Analysis | Borough-level request distribution map |
-| Operational Patterns | Weekday demand and delay patterns |
-| Deep Comparison | Cross-sectional complaint type and borough analysis |
+| KPI Overview | ![KPI](images/KPI.png) |
+| Service Performance Analysis | ![Service Performance](images/Service%20Performance%20analysis.png) |
+| Time Trend Analysis | ![Time Trend](images/Time%20trend%20Analysis.png) |
+| Geographic Analysis | ![Geographic](images/Geographic%20Analysis.png) |
+| Operational Patterns | ![Operational](images/Operational%20Patterns.png) |
+| Deep Comparison Analysis | ![Deep Comparison](images/Deep%20Comparsion%20Analysis.png) |
 
 ---
 
@@ -141,8 +144,8 @@ The interactive dashboard contains 6 report pages:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/nyc-311-analytics.git
-cd nyc-311-analytics
+git clone https://github.com/Aarmi-collab/311-Service-Requests-Capstone.git
+cd 311-Service-Requests-Capstone
 ```
 
 ### 2. Install dependencies
@@ -150,13 +153,13 @@ cd nyc-311-analytics
 pip install -r requirements.txt
 ```
 
-### 3. Run notebooks in order
+### 3. Open the notebook
 ```bash
-jupyter notebook notebooks/01_data_cleaning.ipynb
+jupyter notebook notebooks/311_Service_Requests_Project.ipynb
 ```
 
 ### 4. Open the dashboard
-Open `dashboard/NYC311_Dashboard.pbix` in **Power BI Desktop**
+Open `dashboard/Capstone Project.pbix` in **Power BI Desktop**
 
 ---
 
