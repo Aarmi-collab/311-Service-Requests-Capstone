@@ -1,0 +1,97 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Jupyter Notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# ── Data Files (large / sensitive) ────────────────────────────────────────────
+# Raw and cleaned datasets — too large for GitHub
+data/311_Service_Requests.csv
+data/311_clean_base.csv
+
+# Keep the metadata file (small, useful for reference)
+!data/311_Service_Requests_Meta_Data.xlsx
+
+# ── Power BI ──────────────────────────────────────────────────────────────────
+# .pbix files can be large — consider Git LFS if you want to track them
+# Uncomment the line below to ignore .pbix files
+# dashboard/*.pbix
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ── IDEs and Editors ──────────────────────────────────────────────────────────
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Spyder
+.spyderproject.cfg
+.spyproject/
+
+# Jupyter
+.jupyter/
+
+# ── Logs and Temp Files ───────────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ── Output / Generated Files ─────────────────────────────────────────────────
+# Uncomment if you don't want to track generated figures
+# outputs/figures/
+
+# ── Credentials / Secrets ─────────────────────────────────────────────────────
+.env
+*.env
+secrets.json
+config.ini
+credentials.json
